@@ -1,0 +1,374 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+html,body{
+    height:100%;   
+}
+
+.head--first{
+    background: rgba(0,0,0,.1);
+    color: #FFF;
+    line-height: 85px;
+}
+
+.head a{
+    text-decoration: none;color: #FFF
+}
+
+.more_nav{
+    position: absolute;
+    top: 0;
+    right: -233px;
+    width: 233px;
+    height: 9999px;
+    background: rgba(0,0,0,.8);
+    transition: right .3s;
+    -webkit-transition: right .3s;
+}
+
+.more_nav.show{
+    right: 0px;
+}
+
+.wrap,.page_wp{
+    height: 100%; 
+    overflow: hidden; 
+    position: relative;
+}
+
+.header--add{
+    z-index: 100; 
+    position: fixed;
+    width: 100%;
+}
+
+.page_button{
+    position: absolute;
+    top: 0;
+    right: 50px;
+    height: 100%;
+    z-index: 10;
+}
+
+.btns_box{
+    width:12px;
+    position: absolute;
+    top: 50%;
+    margin-top: -82px;
+}
+
+.page_box,.three_part,.four_part{
+    position: absolute;
+    top: 0;
+    left: -9999px;
+    width: 100%;
+    height: 100%;
+}
+
+.page_box.show{
+    left: 0;
+}
+
+.product_box,.cont_box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.carousel_list, .carousel_list .carousel_cont, .page_box li, .carousel_wp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel_list li.show{
+    z-index: 2;
+}
+
+.carousel_list li.cur{
+    z-index: 0;
+}
+
+.carousel_btns{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    z-index: 5;
+}
+
+.btns_wp{
+    width: 755px;
+    position: relative;
+    margin:0 auto;
+    height: 146px;
+    border-bottom: 1px solid #734936;
+    border-bottom-color:hsla(0, 0%, 100%, .2)
+}
+
+.btns_group{
+    width:760px;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: -3px;
+    text-align: center;
+    font-size:0; 
+}
+
+.btn_win{
+    opacity: .5;
+    display: inline-block;
+    width: 152px;
+    height: 100%;
+    transition: background-image .3s;
+    -webkit-transition: background-image .3s;
+}
+
+.mid_wp{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 1920px;
+    margin-left: -960px;
+    transform-origin: center bottom;
+    -webkit-transform-origin: center bottom; 
+}
+
+.btns_box a{
+    margin-bottom: 25px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius:12px;
+    border: 2px solid white;
+}
+
+.ic_line{
+    position: absolute;
+    width: 145px;
+    height: 2px;
+    background: #FFF;
+    bottom: -1px;
+    transition: left .3s;
+    -webkit-transition: left .3s;
+}
+
+.btns_box a.cur{
+    background: #FFF;
+    box-shadow: 0 0 4px rgba(0,0,0,.5);
+}
+
+.top_to_mid{
+    animation: top_to_mid .5s linear both;
+    -webkit-animation: top_to_mid .5s linear both;
+}
+
+.mid_to_bot{
+    animation: mid_to_bot .5s linear both;
+    -webkit-animation: mid_to_bot .5s  linear both;
+}
+
+.mid_to_top{
+    animation: mid_to_top .5s linear both;
+    -webkit-animation: mid_to_top .5s linear both;
+}
+
+.bot_to_mid{
+    animation: bot_to_mid .5s linear both;
+    -webkit-animation: bot_to_mid .5s linear both;
+}
+
+
+
+#page_1{
+    background: rgb(32, 35, 45)
+}
+
+
+#page_5{
+    background: url("../images/bg1.jpg") no-repeat center center;
+    background-size:cover;
+}
+
+.li1{
+    background: url("../images/bg2_1.png") no-repeat center center;
+    background-size:cover;
+}
+
+.li2{
+    background: url("../images/bg2_2.png") no-repeat center center;
+    background-size:cover;
+}
+
+.li3{
+    background: url("../images/bg2_3.png") no-repeat center center;
+    background-size:cover;
+}
+
+.li4{
+    background: url("../images/bg2_4.png") no-repeat center center;
+    background-size:cover;
+}
+
+.li5{
+    background: url("../images/bg2_5.png") no-repeat center center;
+    background-size:cover;
+}
+
+canvas,.page_wp {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes top_to_mid{
+    from{transform: translateY(-100%);}
+    to{transform: translateY(0%);}
+}
+
+@keyframes mid_to_bot{
+    from{transform: translateY(0%);}
+    to{transform: translateY(100%);}
+}
+
+@keyframes mid_to_top{
+    from{transform: translateY(0%);}
+    to{transform: translateY(-100%);}
+}
+
+@keyframes bot_to_mid{
+    from{transform: translateY(100%);}
+    to{transform: translateY(0%);}
+}
+
+.three_part,.four_part{
+    left: 0;
+}
+
+.part_one,.part_two,.part_three,.four_part_one,.four_part_two,.four_part_three,.four_part_four{
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    overflow: hidden;
+}
+
+.part_two{
+    top:50%;
+    background: url(../images/bg3_2.jpg);
+    background-size:cover ;
+}
+
+.part_three{
+    left: 50%;
+    height: 100%;
+    background: url(../images/bg3_3.jpg);
+    background-size:cover ;
+}
+
+.cont_box,.hover_box{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.part_one .cont_box{
+    background: url(../images/bg3_1.jpg);
+    background-size:cover ;
+}
+
+.hover_box{
+    left: 100%;
+    transition: left .3s;
+    -webkit-transition: left .3s;
+    background: rgba(0,0,0,.8);
+    color: #FFF;
+}
+
+.four_part_one{
+    width: 34%;
+    height: 100%;
+    background: url(../images/bg4_1.jpg);
+    background-size: cover ;
+}
+.four_part_two{
+    left: 34%;
+    width: 66%;
+    height: 50%;
+    background: url(../images/bg4_2.jpg);
+    background-size: cover ;
+}
+
+.four_part_three{
+    left: 34%;
+    top: 50%;
+    width: 33%;
+    height: 50%;
+    background: url(../images/bg4_3.jpg);
+    background-size: cover ;
+}
+
+.four_part_four{
+    width: 33%;
+    height: 50%;
+    left: 67%;
+    top: 50%;
+    background: url(../images/bg4_4.jpg);
+    background-size: cover ;
+}
+
+.absolute_vertical{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+a:hover{
+    text-decoration: none !important;
+    color: #FFF !important;
+}
+
+.ic_more{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 27px;
+    height: 27px;
+    margin-left: 35%;
+    background-image: url("../images/menu.png");
+    background-size:100% auto;
+}
+.ic_text{
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+}
+#nav_more{
+    width: 100%;
+    height: 100%;
+}
+
+.wrap{
+    background-image: url('../images/computer.png');
+    background-size:100% auto; 
+}
+
+.wraplight{
+    background-image: url('../images/computer\ \(1\).png');
+    background-size:100% auto; 
+}
+
+
+
+
+

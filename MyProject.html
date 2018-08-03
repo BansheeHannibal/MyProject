@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="css/MyProject.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <title>MyProject</title>
+</head>
+<body>
+    
+    <div class="header header--add" >
+        <div class="head">            
+            <div class="row" style="height: 85px;">
+                <div class="col-md-1 text-center head--first">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-link dropdown-toggle" style="color: #FFF;"data-toggle="dropdown">导航</button>
+                    </div>
+                </div>
+                <div class="col-md-2 offset-md-9 text-center  font-weight-bold head--first" style="padding: 0;">
+                    <div id="nav_more">
+                        <div class="ic_more"></div>
+                        <div class="ic_text">侧边栏</div>
+                    </div>
+                    <div class="more_nav">
+                        <ul style="position:absolute;top:85px;width:100%;list-style: none;">
+                            <li class="select"><a href="#">特效</a></li>
+                            <li class="select"><a href="#">轮播</a></li>
+                            <li class="select"><a href="#">页面3</a></li>
+                            <li class="select"><a href="#">页面4</a></li>
+                            <li class="select"><a href="#">页面5</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>        
+            
+    <div class="wrap">
+        <!--换屏区域-->
+        <div class="page_wp">
+            <div id="page_1" class="page_box show">
+                <canvas id = "BubbleCanvas"></canvas>
+                <div style="position: absolute;top:50%;transfrom:translateY(-50%);left: 0;width: 50%;height: 100%;color: #FFF;text-align: center;white-space: nowrap;">
+                    <h1 class="display-3">canvas粒子漂浮效果</h1>
+                    <h1 class="display-6 bg-primary">动画效果由纯js完成</h1>
+                </div>
+            </div>
+            <div id="page_2" class="page_box ">
+                <div style="position: absolute;top:50%;transfrom:translateY(-50%);left: 0;width: 50%;height: 100%;color: #FFF;text-align: center;white-space: nowrap;z-index: 5;">
+                    <h1 class="display-3 text-white">简单横向图片轮播效果</h1>
+                    <h3 class="display-6 bg-success text-white">动画效果由纯js完成</h3>
+                </div>
+                <ul class="carousel_list">
+                        <li class="li1 carousel show"></li>
+                        <li class="li2 carousel cur"></li>
+                        <li class="li3 carousel cur"></li>
+                        <li class="li4 carousel cur"></li>
+                        <li class="li5 carousel cur"></li>
+                </ul> 
+                    <div class="carousel_btns">
+                        <div class="mid_wp">
+                            <div class="btns_wp">
+                                <div class="btns_group">
+                                    <a class="btn_win cur wraplight"></a>
+                                    <a class="btn_win wrap"></a>
+                                    <a class="btn_win wrap"></a>
+                                    <a class="btn_win wrap"></a>
+                                    <a class="btn_win wrap"></a>
+                                </div>
+                                <span class="ic_line" style="left: 0px;"></span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div id="page_3" class="page_box ">
+                <div class="three_part">
+                    <div class="part_one">
+                        <div class="cont_box"></div>
+                        <div id="part_one" class="hover_box">
+                            <div class="container text-center absolute_vertical">
+                                <h1>标题<h1>
+                                <p>内容</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part_two">
+                        <div class="cont_box"></div>
+                        <div id="part_two" class="hover_box">
+                            <div class="container text-center absolute_vertical">
+                                <h1>标题<h1>
+                                <p>内容</p>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="part_three">
+                        <div class="cont_box"></div>
+                        <div id="part_three" class="hover_box">
+                            <div class="container text-center absolute_vertical">
+                                <h1>标题<h1>
+                                <p>内容</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="page_4" class="page_box ">
+                <div class="four_part">
+                    <div class="four_part_one">
+                        <div class="cont_box"></div>
+                        <div id="four_part_one" class="hover_box">
+                            <div class="container text-center absolute_vertical">
+                                <h1>标题<h1>
+                                <p>内容</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="four_part_two">
+                        <div class="cont_box"></div>
+                        <div id="four_part_two" class="hover_box">
+                            <div class="container text-center absolute_vertical">
+                                <h1>标题<h1>
+                                <p>内容</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="four_part_three">
+                        <div class="cont_box"></div>
+                        <div id="four_part_three" class="hover_box">
+                            <div class="container text-center absolute_vertical">
+                                <h1>标题<h1>
+                                <p>内容</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="four_part_four">
+                        <div class="cont_box"></div>
+                        <div id="four_part_four" class="hover_box">
+                            <div class="container text-center absolute_vertical">
+                                <h1>标题<h1>
+                                <p>内容</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="page_5" class="page_box "></div>
+        </div>
+        <!--换屏按钮-->
+        <div class="page_button">
+            <div class="btns_box">
+                <a class="circle cur"></a>
+                <a class="circle"></a>
+                <a class="circle"></a>
+                <a class="circle"></a>
+                <a class="circle"></a>
+            </div>
+        </div>           
+    </div>
+            
+   
+    
+</body>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="js/MyProject.js"></script>
+</html>
